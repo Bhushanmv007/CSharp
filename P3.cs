@@ -1,23 +1,19 @@
-﻿using System;
+using System;
 class sub
 {
     static void Main()
     {
-        Console.WriteLine("Enter the string:");
-        string s=Console.ReadLine();
-        int len = s.Length;
-        Console.WriteLine("Length=");
-        Console.WriteLine(len);
-        Console.WriteLine("substrings:");
-        for(int i = 0; i < len; i++)
+        Console.WriteLine("Enter the string: ");
+        string ipstring=Console.ReadLine();
+
+        Console.WriteLine("All substrings are: ");
+        for(int i = 0; i < ipstring.Length; i++)
         {
-            for(int j = i + 1; j <= len; j++)
+            for(int j=i+1;j<ipstring.Length;j++)
             {
-                string v=s.Substring(i, j-i);
-                Console.WriteLine(v);
+                string sub=ipstring.Substring(i,j-i);
+                Console.WriteLine(sub);
             }
         }
-            
-        
     }
 }

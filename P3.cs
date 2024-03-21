@@ -9,7 +9,7 @@ class sub
         Console.WriteLine("All substrings are: ");
         for(int i = 0; i < ipstring.Length; i++)
         {
-            for(int j=i+1;j<ipstring.Length;j++)
+            for(int j=i+1;j<=ipstring.Length;j++)
             {
                 string sub=ipstring.Substring(i,j-i);
                 Console.WriteLine(sub);
